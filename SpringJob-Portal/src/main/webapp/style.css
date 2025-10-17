@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+    --primary-color: #00f7ff; /* Neon Cyan */
+    --background-color: #0a0a14; /* Deep Space Blue */
+    --card-background: #1a1a2e; /* Darker Blue-Purple */
+    --text-color: #e0e0e0; /* Light Gray */
+    --border-color: rgba(0, 247, 255, 0.2);
+    --success-color: #00ff8c;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding-top: 80px;
+}
+
+.navbar {
+    background-color: var(--card-background);
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    color: var(--primary-color) !important;
+    font-weight: 700;
+    font-size: 1.8rem;
+    text-shadow: 0 0 10px var(--primary-color);
+}
+
+.nav-link {
+    color: var(--text-color) !important;
+    margin-left: 15px;
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--primary-color) !important;
+    text-shadow: 0 0 5px var(--primary-color);
+}
+
+.card {
+    background-color: var(--card-background);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px var(--border-color);
+}
+
+.card-title {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.btn-primary {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    box-shadow: 0 0 15px var(--primary-color);
+}
+
+.btn-danger {
+    background-color: transparent;
+    border: 2px solid #ff4d4d;
+    color: #ff4d4d;
+}
+
+.btn-danger:hover {
+    background-color: #ff4d4d;
+    color: var(--background-color);
+    box-shadow: 0 0 15px #ff4d4d;
+}
+
+.form-label {
+    color: var(--primary-color);
+    font-weight: 400;
+}
+
+.form-control {
+    background-color: rgba(26, 26, 46, 0.7);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    border-radius: 5px;
+}
+
+.form-control:focus {
+    background-color: var(--card-background);
+    color: var(--text-color);
+    border-color: var(--primary-color);
+    box-shadow: 0 0 10px var(--border-color);
+}
+
+.text-danger {
+    color: #ff4d4d !important;
+}
+
+.alert-success {
+    background-color: rgba(0, 255, 140, 0.1);
+    border: 1px solid var(--success-color);
+    color: var(--success-color);
+}
