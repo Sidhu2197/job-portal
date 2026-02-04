@@ -16,6 +16,7 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link active" href="/home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="/viewalljobs">All Jobs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
                 </ul>
             </div>
         </div>

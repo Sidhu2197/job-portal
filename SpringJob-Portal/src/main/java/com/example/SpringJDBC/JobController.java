@@ -26,6 +26,19 @@ public class JobController {
         return "home"; // This returns the view named "home.jsp"
     }
 
+    @GetMapping("/login")
+    public String loginPage() {
+        return "login";
+    }
+
+    @PostMapping("/login")
+    public String handleLogin(@RequestParam("email") String email,
+                              @RequestParam("password") String password,
+                              Model model) {
+        model.addAttribute("loginMessage", "Welcome back, " + email + "!");
+        return "login";
+    }
+
     // Maps the "/addjob" URL to the page for adding a new job
     @GetMapping("/addjob")
     public String addJob(Model model) {
